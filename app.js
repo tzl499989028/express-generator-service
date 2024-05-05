@@ -31,6 +31,7 @@ app.use(function (req, res, next) {
     "Access-Control-Allow-Headers",
     "Content-Type, Authorization, X-Requested-With"
   );
+  res.setHeader("Content-Type", "application/json;charset=utf-8");
   next();
 });
 
